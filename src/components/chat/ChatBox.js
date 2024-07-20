@@ -1,5 +1,6 @@
-import React from 'react';
 import './ChatBox.css';
+
+import React from 'react';
 
 const ChatBox = ({ responses }) => {
   return (

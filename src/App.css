@@ -3,7 +3,7 @@
 }
 
 .header {
-  height: 40px; /* Adjust height as needed */
+  height: 100px; /* Adjust height as needed */
   background-color: #f8f9fa;
   display: flex;
   align-items: center;
@@ -51,12 +51,13 @@
 }
 
 .message.user .message-content {
-  background-color: #d0e7ff; /* Pale blue for user questions */
+  background-color: #E6E6FA; /* Pale blue for user questions */
   align-self: flex-start; /* Align user messages to the left */
+  max-width: 100%;
 }
 
 .message.assistant .message-content {
-  background-color: #daf8e3; /* Pale green for assistant responses */
+  background-color: #E6E6FA; /* Pale green for assistant responses */
   align-self: flex-end; /* Align assistant messages to the right */
   justify-content: flex-end; /* Align the content to the right */
   text-align: right; /* Justify the text to the right */
@@ -65,36 +66,42 @@
 .message-content {
   padding: 10px;
   border-radius: 5px;
-  max-width: 70%; /* Ensure the message content takes up the appropriate width */
+  max-width: 100%; /* Ensure the message content takes up the appropriate width */
   word-wrap: break-word;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .input-box {
   display: flex;
   width: 100%;
-  max-width: 800px; /* Increased max-width for better readability */
+  max-width: 1000px; /* Increased max-width for better readability */
   margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  /* transition: border-color 0.3s, box-shadow 0.3s; */
 }
 
 .input-box input {
   flex-grow: 1;
-  padding: 10px;
+  padding: 15px; /* Increased padding for better spacing */
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 10px; /* Increased border-radius for a more rounded look */
   margin-right: 10px;
+  font-size: 18px; /* Slightly adjusted font size */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  transition: border-color 0.3s, box-shadow 0.3s; 
 }
 
 .input-box button {
   padding: 10px 20px;
   border: none;
-  background-color: #007bff;
+  background-color: #E6E6FA;
   color: white;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .input-box button:hover {
-  background-color: #0056b3;
+  background-color: #663399;
 }
 
 .error-page {

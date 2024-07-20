@@ -1,10 +1,11 @@
-import React from 'react';
 import './Header.css';
+
+import React from 'react';
 
 function Header() {
   return (
     <header className="header">
-      <h1>Chat with ilab</h1>
+      <h1>Instana Dynamic Focus Query</h1>
     </header>
   );
 }

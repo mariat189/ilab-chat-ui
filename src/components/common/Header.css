@@ -1,15 +1,17 @@
 .header {
-  background-color: #1257a0;
+  background-color: #663399;
   color: white;
   padding: 5px 20px; 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   align-items: center;
-  height: 40px; 
+  height: 70px; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
+
 .header h1 {
-  margin: 0;
-  font-size: 1.2rem; 
+  margin-left: 350px;
+  font-size: 25px; 
 }

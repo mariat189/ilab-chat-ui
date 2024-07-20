@@ -1,8 +1,9 @@
-import React from 'react';
 import './ChatContainer.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+
 import ChatBox from './ChatBox';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 const ChatContainer = ({ responses, message, setMessage, handleSendMessage, handleKeyDown, isSending }) => {
   const sendMessage = () => {
@@ -12,10 +13,16 @@ const ChatContainer = ({ responses, message, setMessage, handleSendMessage, hand
 
   return (
     <div className="chat-container" style={{
-      backgroundImage: `url(${process.env.PUBLIC_URL}/chatbot.png)`,
+      
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      padding: '20px'
+      padding: '90px',
+      height: '100vh',
+      overflow: 'hidden',
+      display: 'flex',
+      flexDirection: 'column',
+      margin: '0',
+      boxSizing: 'border-box'
     }}>
       <ChatBox responses={responses} />
       <div className="input-box">
@@ -23,7 +30,7 @@ const ChatContainer = ({ responses, message, setMessage, handleSendMessage, hand
           type="text"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          placeholder="Type your message..."
+          placeholder="Quote down your question..."
           onKeyDown={handleKeyDown}
           disabled={isSending}
         />
